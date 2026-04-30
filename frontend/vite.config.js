@@ -10,6 +10,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
       '@locales': path.resolve(__dirname, '../locales')
     }
+    server: {
+  host: true,
+  allowedHosts: ['mirofish-kldz.onrender.com']
+}
   },
   server: {
     port: 3000,
